@@ -1,0 +1,17 @@
+spring:
+  application:
+    ui:
+      title: 大创管理
+      insert-title: 项目
+      main-fxml: classpath:/view/main.fxml
+      insert-fxml: classpath:/view/insert.fxml
+      rows-per-page: 50
+
+  main:
+    web-application-type: none
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/dcgl?serverTimezone=GMT%2B8
+    username: root
+    password: root

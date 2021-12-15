@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="750.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="icu.harx.dachuang.ui.controller.InsertController">
+    <center>
+        <ScrollPane>
+            <content>
+                <VBox>
+                    <children>
+                        <VBox>
+                            <children>
+                                <Label text="ID" />
+                                <TextField fx:id="tfID" maxWidth="-Infinity" prefWidth="250.0" />
+                            </children>
+                            <VBox.margin>
+                                <Insets bottom="5.0" top="5.0" />
+                            </VBox.margin>
+                        </VBox>
+                        <VBox>
+                            <children>
+                                <Label text="高校代码" />
+                                <ComboBox fx:id="cbGxdm" editable="true" maxWidth="-Infinity" prefWidth="250.0" />
+                            </children>
+                            <VBox.margin>
+                                <Insets bottom="5.0" top="5.0" />
+                            </VBox.margin>
+                        </VBox>
+                        <VBox>
+                            <children>
+                                <Label text="高校名称" />
+                                <ComboBox fx:id="cbGxmc" editable="true" maxWidth="-Infinity" prefWidth="250.0" />
+                            </children>
+                            <VBox.margin>
+                                <Insets bottom="5.0" top="5.0" />
+                            </VBox.margin>
+                        </VBox>
+                        <VBox>
+                            <children>
+                                <Label text="项目编号" />
+                                <TextField fx:id="tfXmbh" maxWidth="-Infinity" prefWidth="250.0" />
+                            </children>
+                            <VBox.margin>
+                                <Insets bottom="5.0" top="5.0" />
+                            </VBox.margin>
+                        </VBox>
+                        <VBox>
+                            <children>
+                                <Label text="项目级别" />
+                                <ComboBox fx:id="cbXmjb" editable="true" maxWidth="-Infinity" prefWidth="250.0" />
+                            </children>
+                            <VBox.margin>
+                                <Insets bottom="5.0" top="5.0" />
+                            </VBox.margin>
+                        </VBox>
+                        <VBox>
+                            <children>
+                                <Label text="项目名称" />
+                                <TextField fx:id="tfXmmc" maxWidth="-Infinity" prefWidth="250.0" />
+                            </children>
+                            <VBox.margin>
+                                <Insets bottom="5.0" top="5.0" />
+                            </VBox.margin>
+                        </VBox>
+                        <VBox>
+                            <children>
+                                <Label text="项目类型" />
+                                <ComboBox fx:id="cbXmlx" editable="true" maxWidth="-Infinity" prefWidth="250.0" />
+                            </children>
+                            <VBox.margin>
+                                <Insets bottom="5.0" top="5.0" />
+                            </VBox.margin>
+                        </VBox>
+                        <VBox>
+                            <children>
+                                <Label text="项目负责人姓名" />
+                                <TextField fx:id="tfXmfzrxm" maxWidth="-Infinity" prefWidth="250.0" />
+                            </children>
+                            <VBox.margin>
+                                <Insets bottom="5.0" top="5.0" />
+                            </VBox.margin>
+                        </VBox>
+                        <VBox>
+                            <children>
+                                <Label text="项目负责人学号" />
+                                <TextField fx:id="tfXmfzrxh" maxWidth="-Infinity" prefWidth="250.0" />
+                            </children>
+                        </VBox>
+                        <VBox>
+                            <children>
+                                <Label text="项目全体成员信息" />
+                                <TextField fx:id="tfXmqtcyxx" maxWidth="-Infinity" prefWidth="250.0" />
+                            </children>
+                            <VBox.margin>
+                                <Insets bottom="5.0" top="5.0" />
+                            </VBox.margin>
+                        </VBox>
+                        <VBox>
+                            <children>
+                                <Label text="指导教师姓名" />
+                                <TextField fx:id="tfZdjsxm" maxWidth="-Infinity" prefWidth="250.0" />
+                            </children>
+                            <VBox.margin>
+                                <Insets bottom="5.0" top="5.0" />
+                            </VBox.margin>
+                        </VBox>
+                        <VBox>
+                            <children>
+                                <Label text="指导教师职称" />
+                                <ComboBox fx:id="cbZdjszc" editable="true" maxWidth="-Infinity" prefWidth="250.0" />
+                            </children>
+                            <VBox.margin>
+                                <Insets bottom="5.0" top="5.0" />
+                            </VBox.margin>
+                        </VBox>
+                        <VBox>
+                            <children>
+                                <Label text="项目简介" />
+                                <TextArea fx:id="taXmjj" maxWidth="-Infinity" prefWidth="450.0" wrapText="true" />
+                            </children>
+                            <VBox.margin>
+                                <Insets bottom="5.0" top="5.0" />
+                            </VBox.margin>
+                        </VBox>
+                        <VBox>
+                            <children>
+                                <Label text="备注" />
+                                <ComboBox fx:id="cbBz" editable="true" maxWidth="-Infinity" prefWidth="250.0" />
+                            </children>
+                            <VBox.margin>
+                                <Insets bottom="5.0" top="5.0" />
+                            </VBox.margin>
+                        </VBox>
+                        <VBox>
+                            <children>
+                                <Label text="项目推荐日期" />
+                                <DatePicker fx:id="dpXmtjrq" editable="false" maxWidth="-Infinity" prefWidth="250.0" />
+                            </children>
+                            <VBox.margin>
+                                <Insets bottom="5.0" top="5.0" />
+                            </VBox.margin>
+                        </VBox>
+                    </children>
+                </VBox>
+            </content>
+            <padding>
+                <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+            </padding>
+        </ScrollPane>
+    </center>
+    <top>
+        <Label fx:id="lbPrompt" text="新增项目">
+            <font>
+                <Font size="18.0" />
+            </font>
+            <BorderPane.margin>
+                <Insets bottom="10.0" left="30.0" right="30.0" top="10.0" />
+            </BorderPane.margin>
+        </Label>
+    </top>
+    <bottom>
+        <HBox alignment="BOTTOM_RIGHT" spacing="10.0">
+            <children>
+                <Button onAction="#onConfirm" text="确定">
+               <graphic>
+                  <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/confirm.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+                <Button onAction="#onCancel" text="取消">
+               <graphic>
+                  <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/cancel.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            </children>
+            <padding>
+                <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+            </padding>
+            <BorderPane.margin>
+                <Insets right="90.0" />
+            </BorderPane.margin>
+        </HBox>
+    </bottom>
+</BorderPane>
